@@ -62,7 +62,7 @@ form.example button {
 }
   
 form.example button:hover {
-    background: #0b7dda;
+    background: #2323ce;
 }
   
 form.example::after {
@@ -73,9 +73,9 @@ form.example::after {
 
 .Login-Cadastro {
     display: flex; /* Para alinhar os links na horizontal */
-    gap: 20px; /* Espaçamento entre os links */
+    gap: 25px; /* Espaçamento entre os links */
     justify-content: center; /* Centraliza os links horizontalmente */
-    padding: 8px; /* Espaçamento interno */
+    padding: 20px; /* Espaçamento interno */
 }
 
 .Login-Cadastro a {
@@ -83,8 +83,8 @@ form.example::after {
     color: #3700ff; /* Cor do texto */
     font-size: 16px; /* Tamanho da fonte */
     font-weight: bold; /* Deixa o texto em negrito */
-    padding: 10px 20px; /* Adiciona espaçamento dentro do link */
-    border-radius: 5px; /* Borda arredondada */
+    padding: 7px 7px; /* Adiciona espaçamento dentro do link */
+    border-radius: 10px; /* Borda arredondada */
     transition: background-color 0.3s ease; /* Efeito de transição */
 }
 
@@ -116,18 +116,106 @@ form.example::after {
     color: aliceblue;
     text-decoration: none;
 }
+.galeria h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+.galeria {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
 
-/* Imagens principais */
-.content img {
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.galeria-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-item img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.galeria-item:hover {
+    transform: scale(1.10);
+}
+
+.produtos-destaque {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.produtos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto:hover {
+    transform: scale(1.05);
 }
 
 .conteudo {
     padding: 100px;
     background-color: #0467ad;
 }
+
+.newsletter {
+    padding: 30px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #0b7dda;
+}
+
 
 .footer {
     background-color: #191970;

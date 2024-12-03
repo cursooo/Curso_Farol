@@ -12,7 +12,7 @@
     <!-- Cabeçalho principal com logo e barra de pesquisa -->
     <header class="Primeiro">
         <div class="logo">
-            <img src="Texto_do_seu_parágrafo-removebg-preview.png" alt="Logo">
+            <img src="imagens/Texto_do_seu_parágrafo-removebg-preview.png" alt="Logo">
         </div>
         <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
            <input type="text" placeholder="Search.." name="search2">
@@ -20,8 +20,8 @@
         </form>
     <div class="Login-Cadastro">
     <form action="cadastro_usuario.php" method="post">
-         <a href="Web Projeto/Login/Login_user.php">Login</a>
-         <a href="cadastro_usuario.php">Cadastro</a>
+         <a href="WebProjeto/Login/Login_user.php">Login</a>
+         <a href="WebProjeto/Site/cadastro_usuario.php">Cadastro</a>
     </div>
     </header>
     <!-- Barra de navegação -->
@@ -34,14 +34,38 @@
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
+<!-- Galeria de imagens -->
+<section class="galeria">
+    <h1>Conheça Nossos Produtos</h1>
+    <div class="galeria-container">
 
-    <!-- Conteúdo principal -->
-    <div class="content">
-        <img src="pexels-pixabay-276724.jpg" alt="Imagem de exemplo">
+        <div class="galeria-item">
+            <img src="imagens/pexels-designecologist-1005058.jpg" alt="Imagem 1">
+        </div>
+        <div class="galeria-item">
+            <img src="imagens/pexels-itsterrymag-2635038.jpg" alt="Imagem 2">
+        </div>
+        <div class="galeria-item">
+            <img src="imagens/pexels-kamo11235-667838.jpg" alt="Imagem 3">
+        </div>
+        <div class="galeria-item">
+            <img src="imagens/pexels-solliefoto-298842.jpg" alt="Imagem 4">
+        </div>
     </div>
-    <div class="conteudo">
+</section>
+</section>
+<div class="conteudo">
        <h2>Seu Conteúdo Aqui</h2>
-    </div>
+</div>
+<section class="newsletter">
+    <h2>Assine nossa Newsletter</h2>
+    <p>Receba as melhores ofertas direto no seu e-mail!</p>
+    <form action="/newsletter" method="post">
+        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+        <button type="submit">Inscrever-se</button>
+    </form>
+</section>
+
     <footer class="footer">
         <div class="footer-container">
             <!-- Seção Institucional -->
